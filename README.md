@@ -31,7 +31,7 @@ If you would rather use something other than Visual Studio
 - Create the ability to remove items from your wishlist
 
 ## Tasks necessary to complete implementation:
-
+    
 __Note:__ this isn't the only way to accomplish this, however; this is what the project's tests are expecting. Implementing this in a different way will likely result in being marked as incomplete / incorrect.
 
 - [ ] Creating ASP.NET Core Application from scratch
