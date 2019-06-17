@@ -34,6 +34,21 @@ namespace WishList.Controllers
             return RedirectToAction("Index");
         }
 
+        public IActionResult Edit(int id)
+        {
+            var item = _context.items.Find(id);
+            return View("Edit", item);
+        }
+
+        [HttpPost]
+        public IActionResult Update(Item item)
+        {
+            _context.Update(item);
+            _context.SaveChanges();
+            return RedirectToAction("Index");
+        }
+
+
         public IActionResult Delete(int Id)
         {
             var item = _context.items.Find(Id);
